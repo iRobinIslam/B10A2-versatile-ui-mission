@@ -101,3 +101,133 @@
     display: none;
 }
 
+/* banner style */
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.banner-content{
+    max-width: 430px;
+}
+.banner-h1{
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+.banner-container{
+    gap: 80px;
+    align-items: center;
+    margin-top: 50px;
+}
+.btn-container{
+    gap: 10px;
+}
+.btn-container button{
+    margin-top: 28px;
+}
+.banner-img{
+    position: relative;
+}
+.banner-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.banner-card-1{
+    max-width: 193px;
+    max-height: 98px;
+    text-wrap: nowrap;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.813rem;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.banner-card-2-content{
+    max-width: 193px;
+    max-height: 98px;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 12px;
+    font-size: 0.813rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.card-2-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.banner-card-2{
+    flex-direction: column;
+    gap: 5px;
+
+}
+.card-h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.banner-card-1-container{
+    position: absolute;
+    top: 125px;
+    left: 230px;
+}
+.banner-card-2-container{
+    position: absolute;
+    top: 410px;
+    right: 260px;
+}
+
+/* for tablets */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+    .navbar-main {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-btn-container{
+        display: none;
+    }
+
+    .nav-hamburger-menu {
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .banner-card-1-container{
+        left: 170px;
+        top: 60px;
+    }
+    .banner-card-2-container{
+        right: 120px;
+        top: 270px;
+    }
+}
