@@ -229,6 +229,122 @@
     margin-bottom: 6px;
 }
 
+/* run style starts here */
+.run{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.run-container{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    padding: 40px 55px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 165px;
+    max-width: 90%;
+}
+.run-text-content{
+    max-width: 400px;
+}
+.run-text-content h1{
+    margin-bottom: 14px;
+}
+.run-text-content button{
+    margin-top: 35px;
+}
+
+.run-img-content img{
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+/* bmi style stars here */
+.bmi-main{
+    width: 100%;
+    margin: 0 auto;
+}
+.bmi-header{
+    padding: 90px 20px;
+    margin: 0px auto;
+    max-width: 670px;
+    text-align: center;
+}
+.bmi-body{
+    width: 100%;
+    background-color: rgba(34, 34, 34, 1);
+    gap: 100px;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 40px 55px;
+}
+.bmi-left h1{
+    font-size: 1.75rem;
+}
+.bmi-left p, table{
+    font-size: 0.875rem;
+}
+.table-container{
+    margin-top: 45px;
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+
+}
+th{
+    font-weight: 800;
+}
+
+.bmi-right{
+   max-width: 577px;
+}
+.bmi-right h1{
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+}
+.form-main{
+    margin-top: 34px;
+}
+.form-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.form-field{
+    width: 48%;
+    margin-top: 12px;
+}
+.form-field-factor{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.form-main button{
+    margin-top: 35px;
+}
+
+
+.form-container 
+input,
+select{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 12px 20px 12px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
 /* for tablets */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .navbar-main {
@@ -240,6 +356,21 @@
         justify-content: space-around;
         align-items: center;
         margin-top: 50px;
+    }
+    .run-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+    .bmi-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmi-body{
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
 
@@ -270,5 +401,24 @@
     .banner-card-2-container{
         right: 120px;
         top: 270px;
+    }
+    .btn-container{
+        justify-content: space-around;
+    }
+    .run-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .bmi-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmi-body{
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
